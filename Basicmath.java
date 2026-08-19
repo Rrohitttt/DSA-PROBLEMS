@@ -1,7 +1,7 @@
 import java.util.*;
 public class Basicmath{
 
-    /* public static int countDigit(long a) {
+     public static int countDigit(long a) {
           int count=0;
           while(n>0){
              count++;
@@ -84,7 +84,7 @@ public static boolean isPrime(int n) {
               return true;
           else 
              return false;
-    }*/
+    }
      public static int GCD(int n1, int n2) {
       while(n1>0 && n2>0){
         if(n1>n2) n1=n1%n2;
