@@ -4,11 +4,9 @@ class Solution {
         int[] hash = new int[256];
         int[] hash2 = new int[256];
         for (int i = 0; i < s.length(); i++) {
-            int a = s.charAt(i);
-            int b = t.charAt(i);
-            if (hash[a] != hash2[b]) return false;
-            hash[a] = i + 1;
-            hash2[b] = i + 1;
+            if (hash[s.charAt(i)] != hash2[t.charAt(i)]) return false;
+            hash[s.charAt(i)] = i + 1;
+            hash2[t.charAt(i)] = i + 1;
         }
         return true;
     }
